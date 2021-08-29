@@ -32,7 +32,7 @@ pub fn logger(log_file_path: &str, level: LevelFilter) {
 
 }
 
-fn select_level(level: &str) -> LevelFilter {
+pub fn select_level(level: &str) -> LevelFilter {
     match level {
         "debug" => {LevelFilter::Debug}
         "info" => {LevelFilter::Info}
